@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to left, #e1a2a2, #85cea5e3);
+}
+
+.container {
+    display: flex;
+}
+
+#top {
+    font-size: 29px;
+}
+
+h1 {
+    font-size: 40px;
+    display: inline;
+}
+
+#sub,
+#AA {
+    padding: 5px;
+    font-family: 'Baloo 2', cursive;
+    outline: none;
+}
+
+#clearTab {
+    padding: 10px;
+    width: 40%;
+    font-family: 'Baloo 2', cursive;
+}
+
+#nTab {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#box {
+    max-width: 350px;
+    margin: 12px auto;
+    border: 2px solid #eb4242;
+}
+
+.tables {
+    width: 50%;
+    height: fit-content;
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    color: blueviolet;
+    font-family: 'Baloo 2', cursive;
+    border: 2px solid #e92f17;
+    padding: 5px;
+}
+
+.bg2 img {
+    height: 490px;
+}
+
+#img3 {
+    height: 80px;
+}
+
+footer {
+    position: sticky;
+    bottom: 0px;
+    background-color: #000000ba;
+    text-align: center;
+}
+
+footer p {
+    color: red;
+    font-size: 25px;
+    font-family: 'Baloo 2', cursive;
+}
+
+footer p #sp {
+    font-weight: bold;
+}
+
+footer p #sp2 {
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+footer p #sp2 a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+footer p #sp2 a:hover {
+    color: black;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 320px) {
+    .container {
+        flex-direction: column;
+    }
+    .tables {
+        width: fit-content;
+    }
+    .bg {
+        max-width: 320px;
+        overflow: hidden;
+        margin: auto;
+    }
+    .bg2 {
+        margin: auto;
+    }
+    .bg img,
+    .bg2 img {
+        height: 320px;
+    }
+    #bg1 {
+        box-shadow: 1px -10px 8px 6px black;
+    }
+    #bg2 {
+        box-shadow: 0px 9px 8px 6px black;
+    }
+    #img1 {
+        animation: img1 10s infinite;
+    }
+    #img2 {
+        animation: img2 10s infinite;
+    }
+    @keyframes img1 {
+        0% {}
+        20% {
+            transform: rotate(15deg);
+        }
+        40% {
+            transform: rotate(-15deg);
+        }
+        60% {
+            transform: scale(1.2);
+        }
+        80% {
+            transform: scale(.8);
+        }
+    }
+    @keyframes img2 {
+        0% {}
+        20% {
+            transform: rotate(15deg);
+        }
+        40% {
+            transform: rotate(-15deg);
+        }
+        60% {
+            transform: scale(1.1);
+        }
+        80% {
+            transform: scale(.8);
+        }
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    .container {
+        height: 840px;
+    }
+    #img1 {
+        position: relative;
+        animation: img1 5s infinite;
+    }
+    #img2 {
+        position: relative;
+        animation: img2 5s infinite;
+    }
+    @keyframes img1 {
+        0% {
+            top: 0vh;
+        }
+        40% {
+            top: 40vh;
+        }
+        60% {
+            top: 40vh;
+            transform: scale(.8);
+        }
+        100% {
+            top: 0vh;
+        }
+    }
+    @keyframes img2 {
+        0% {
+            top: 37vh;
+        }
+        40% {
+            top: 0vh;
+        }
+        60% {
+            top: 0vh;
+            transform: scale(.8);
+        }
+        100% {
+            top: 37vh;
+        }
+    }
+}
+
+
+/* Animation */

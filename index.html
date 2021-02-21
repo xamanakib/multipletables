@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a multiplication table created by AKIB.This website will create any multiplication table by user input ">
+    <meta property="og:image" content="bg3.png">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="table.css">
+    <title>Table of Your Number</title>
+</head>
+
+<body>
+    <div class="container" id="cont">
+        <div class="bg" id="bg1">
+            <img id="img1" src="bg.png" alt="">
+        </div>
+        <div class="tables" id="tab">
+            <h4 id="top">Enter a number in the box </h4>
+
+
+            <input type="number" id="AA" placeholder="Enter a number" />
+            <input type="button" id="sub" value="Submit." onclick='printTab()' /> <br>
+            <input type="button" id="clearTab" value="Clear" onclick='clearTab()' /> <br>
+
+            <div id="box">
+                <h1> Table of </h1><span id="nTab"></span>
+            </div>
+            <div class="output">
+                <p id="TT"></p>
+                <img id="img3" src="bg3.png" alt="">
+            </div>
+
+
+        </div>
+        <div class="bg2" id="bg2">
+            <img id="img2" src="bg2.png" alt="">
+        </div>
+    </div>
+    <footer>
+        <p>Made by <span id="sp">AKIB</span>----- <span id="sp2"><a
+                    href="https://xamanakib.github.io/Akibxaman.personal/#s02"> About Me</a></span></p>
+    </footer>
+</body>
+<script src="table.js"></script>
+
+</html>
